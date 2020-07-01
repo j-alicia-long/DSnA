@@ -2,12 +2,12 @@
 Data Structures &amp; Algorithms for practice
 
 ## Data Structures
-Linked Lists
-Trees, Tries, Graphs
-Stacks & Queues
-Heaps
-Vectors/Arraylists
-Hash Tables
+- Linked Lists
+- Trees, Tries, Graphs
+- Stacks & Queues
+- Heaps
+- Vectors/Arraylists
+- Hash Tables
 
 ## Algorithms
 Breadth-First Search
