@@ -1,5 +1,4 @@
 # Recursive binary search.
-
 # Returns index of x in arr if present, else -1
 def binary_search(arr, low, high, x):
 
@@ -37,7 +36,7 @@ if result != -1:
 else:
     print("Element is not present in array")
 
-########################
+################################################
 
 # Iterative Binary Search Function
 # It returns index of x in given array arr if present,
