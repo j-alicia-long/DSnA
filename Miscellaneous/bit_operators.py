@@ -32,3 +32,7 @@ b = -10
 # print bitwise left shift operator
 print("a << 1 =", a << 1)       # 10
 print("b << 1 =", b << 1)       # -20
+
+
+### Bit count
+print(bin(a ^ b).count('1'))
