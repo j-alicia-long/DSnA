@@ -35,4 +35,8 @@ print("b << 1 =", b << 1)       # -20
 
 
 ### Bit count
-print(bin(a ^ b).count('1'))
+xor = a ^ b
+print(bin(xor).count('1'))
+
+# Brian Kernighan's Algorithm: Clear rightmost bit
+xor = xor & (xor - 1)
