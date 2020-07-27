@@ -26,7 +26,24 @@ Notes:
 
 
 ## Counting Sort - O(n+k)
+Count the number of objects having distinct key values, then calculate the position of each in the output sequence.
 
+  CountingSort(A, B, n, k)
+    # Freq lists with arbitrary large k
+    Allocate C(0..k) of Natural := (others => 0)
+
+    # Count frequencies of each number
+    for j in 1 .. n loop
+        C[A[j]] := C[A[j]] + 1
+
+    # Calculate cumulative counts
+    for i in 1 .. k loop
+        C[i] := C[i] + C[i-1]
+
+    # Output list
+    for j in reverse 1 .. n loop
+        B[C[A[j]]] := A[j]
+        C[A[j]] := C[A[j]] - 1
 
 Notes:
 - Trades time for space
