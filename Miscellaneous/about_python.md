@@ -7,3 +7,19 @@ Note: Python does not actually have traditional primitive types - they are all o
 
 Source:
 - https://www.quora.com/How-do-I-pass-a-variable-by-reference-in-Python/answer/Tony-Flury
+
+
+## Time complexities of built-in python data structures
+Source:
+- https://wiki.python.org/moin/TimeComplexity
+
+
+## What algorithm does Python 3's sort() use?
+**Timsort** - O(n) Best, O(n logn) Avg/Worst
+- Hybrid algorithm derived from Merge Sort and insertion sort
+- Idea: Finds already-ordered subsets of data, and uses them to sort more efficiently
+
+Performance
+- Implemented in hand-optimized C
+- Designed to perform well on real-world data
+- Stable, not parallelizable, not in-place, adaptive
