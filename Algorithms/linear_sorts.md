@@ -48,6 +48,7 @@ Count the number of objects having distinct key values, then calculate the posit
 Notes:
 - Trades time for space
 - Not efficient for wide ranges (where range >> input size)
+- Must be able to use keys as array indices (no non-int inputs)
 
 
 ## Radix Sort - O(d(n+k))

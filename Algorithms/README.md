@@ -45,4 +45,17 @@ Sorts that don't use comparisons. Can sort in linear time under specific conditi
 
 
 ## Dynamic Programming
+Trading time for space, by storing values to avoid repeated work.
+- DP problems must have optimal substructure
+
+### Top-Down Approach (Recursive with Memoization)
+
+Note:
+- For memoization in python, use the [@lru_cache()](https://www.geeksforgeeks.org/python-functools-lru_cache/) tag on a function to store most recent function calls
+
+### Bottom-up Approach (Iterative)
+A little trickier to come up with, but can save time & space.
+
+
 ## Backtracking
+Similar to DFS but with the additional steps of backtracking

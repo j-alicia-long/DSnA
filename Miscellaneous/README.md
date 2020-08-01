@@ -4,6 +4,11 @@ Mostly written in Python
 ## Bit Manipulation
 See bit_operators.py for python implementation details
 
+Typical Bitmask Problems
+- Identify an array element (or elements), which appears exactly given number of times. 
+  - Likely Solution: build an array bitmask using XOR operator.
+  - Examples: In-Place Swap, Single Number, Single Number II.
+
 ## Memory (Stack vs. Heap)
 
 
