@@ -17,3 +17,19 @@ Framework
   4. Test cases - iterate between 3-4
   5. Extras - run time, space, potential improvements
   ```
+
+
+## Tips and Tricks
+- Adding "Why" you are doing something
+  ```
+    - OK: "Now I'm going to do a for loop from 0 to i"
+    - GREAT: "Because I need to look at every value, I am going to do a for loop..."
+  ```
+- Outline a solution at the beginning
+  - Use comments, pseudocode, whatever gives enough details
+- Record variable changes during test cases
+- Ask questions!
+  ```
+    - "Am I on the right track?"
+    - "Are there edge cases you think I am missing?"
+  ```
