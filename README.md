@@ -31,7 +31,6 @@ Data Structures &amp; Algorithms for practice
 - Abstraction
 - Encapsulation
 - Inheritance
-  - Multiple Inheritance
 - Polymorphism
 - Abstract class vs. Interface
 
