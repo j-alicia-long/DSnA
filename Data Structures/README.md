@@ -42,6 +42,22 @@ Different ways of traversing the tree
 
 ## Stacks & Queues
 
+### Stacks
+- LIFO
+- Alway used with DFS
+- Keywords: Syntax checking, Recursion, Backtracking, Reversing a word
+
+### Queues
+- FIFO
+- Always used with BFS
+- Keywords: Minimum
+
+#### Priority Queues
+- Queue sorted by something specific
+  - Ex. numeric value (path length), alphabetically
+  - Used in Dijkstra's Algorithm for min path
+
+
 
 ## Heaps
 
