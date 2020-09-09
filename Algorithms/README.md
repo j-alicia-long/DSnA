@@ -31,7 +31,7 @@ Note: Selection sort needs n(n-1)/2 total comparisons (total pairs), thus cannot
 |  Timsort        |  O(n)      |  O(n logn) |  O(n^2) |  O(n) |
 Note: Timsort is used natively in python's sort().
 
-###Stable sorts:
+### Stable sorts
 - Bubble sort
 - Insertion sort
 - Merge sort
