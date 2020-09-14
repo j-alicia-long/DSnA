@@ -1,21 +1,4 @@
 """
-Depth-First Search with a Stack:
-
-    go down a path until we get to a dead end, then backtrack
-    Create a set (has been visited)
-    Create a stack (to be visited)
-    Add root to stack
-    while the stack is not empty
-        Curr = get the top element in stack
-        Return true if cur is target
-        Iterate through neighbors
-            If neighbor has not been visited
-                Mark it as visited
-                Add it to the stack
-
-    If it gets to here, there is no path so return false
-"""
-"""
 Breadth-First Search with a Queue:
 
     explore by steps (find all possible next valus and enqueue them)
@@ -33,4 +16,22 @@ Breadth-First Search with a Queue:
 
     If it gets to here, there is no path so return false
 
+"""
+
+"""
+Depth-First Search with a Stack:
+
+    go down a path until we get to a dead end, then backtrack
+    Create a set (has been visited)
+    Create a stack (to be visited)
+    Add root to stack
+    while the stack is not empty
+        Curr = get the top element in stack
+        Return true if cur is target
+        Iterate through neighbors
+            If neighbor has not been visited
+                Mark it as visited
+                Add it to the stack
+
+    If it gets to here, there is no path so return false
 """

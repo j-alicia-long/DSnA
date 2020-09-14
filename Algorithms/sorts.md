@@ -1,4 +1,4 @@
-# Sorting
+# Sorts Pseudocode
 
 ## Bubble Sort
 ```

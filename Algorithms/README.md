@@ -2,9 +2,24 @@
 Mostly written in Python
 
 ## Searches
-### Breadth-First Search
-### Depth-First Search
+### Breadth-First Search (BFS)
+- Uses a queue
+- More memory than DFS bc of storage of children
+- Better when target is *closer* to source
+
+### Depth-First Search (DFS)
+- Uses a stack
+- Can also be done recursively
+- Better when target is *further* from source
+
 ### Binary Search
+- Needs sorted list
+- Log(n) - cuts space in half each time
+
+
+## Backtracking
+Similar to DFS but with the additional steps of backtracking
+
 
 ## Sorts
 Here are some examples of each group of sorting
@@ -49,13 +64,8 @@ Trading time for space, by storing values to avoid repeated work.
 - DP problems must have optimal substructure
 
 ### Top-Down Approach (Recursive with Memoization)
-
 Note:
-- For memoization in python, use the [@lru_cache()](https://www.geeksforgeeks.org/python-functools-lru_cache/) tag on a function to store most recent function calls
+- For memoization in python, use the [@lru_cache()](https://www.geeksforgeeks.org/python-functools-lru_cache/) tag from the **functools** module on a function to store most recent function calls
 
 ### Bottom-up Approach (Iterative)
 A little trickier to come up with, but can save time & space.
-
-
-## Backtracking
-Similar to DFS but with the additional steps of backtracking
