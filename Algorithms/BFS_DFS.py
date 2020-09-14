@@ -14,12 +14,13 @@ Depth-First Search with a Stack:
                 Add it to the stack
 
     If it gets to here, there is no path so return false
-
-
+"""
+"""
 Breadth-First Search with a Queue:
+
     explore by steps (find all possible next valus and enqueue them)
-    Create a Queue (will be visited)
     Create a set (has been visited)
+    Create a Queue (will be visited)
     Keep track of num steps
     Add root to queue
     while queue is not empty
