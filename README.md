@@ -1,5 +1,6 @@
 # DSnA
-Data Structures &amp; Algorithms for practice
+Data Structures &amp; Algorithms for interview practice! 
+Notes + Pseudocode in subfolders by subject.
 
 
 ## Data Structures
