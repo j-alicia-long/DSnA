@@ -1,3 +1,12 @@
+"""BFS, DFS"""
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 """
 Breadth-First Search with a Queue:
 
@@ -17,6 +26,37 @@ Breadth-First Search with a Queue:
     If it gets to here, there is no path so return false
 
 """
+class Solution:
+    def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
+        if not root: # Base case
+            return []
+
+        traversal = []
+        zig_reverse = False # Flag for direction of zigzag
+
+        # Breadth-first traversal
+        level = [root]
+        while level:
+            # Get list of values in level
+            level_vals = []
+            for node in level:
+                level_vals.append(node.val)
+
+            # Append level order to traversal, flipping direction
+            traversal.append(level_vals[::-1]) if zig_reverse else traversal.append(level_vals)
+            zig_reverse = not zig_reverse
+
+            next_level = []
+            # Add each child node to next_level
+            for node in level:
+                if node.left:
+                    next_level.append(node.left)
+                if node.right:
+                    next_level.append(node.right)
+            level = next_level
+
+        return traversal
+        
 
 """
 Depth-First Search with a Stack:
@@ -35,3 +75,25 @@ Depth-First Search with a Stack:
 
     If it gets to here, there is no path so return false
 """
+
+"""
+Depth-First Search with Recursion:
+"""
+
+class Solution:
+    def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
+        level_order = []
+        def traverse(node, depth):
+            if node:
+                if depth >= len(level_order): # we are at a new level
+                    level_order.append([node.val])
+                else:
+                    if depth & 1:
+                        level_order[depth].insert(0, node.val)
+                    else:
+                        level_order[depth].append(node.val)
+                traverse(node.left, depth+1)
+                traverse(node.right, depth+1)
+
+        traverse(root, 0)
+        return level_order
